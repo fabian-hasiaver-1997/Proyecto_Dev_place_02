@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/logo.png" rel="icon">
+    <link href="img/logo.png" rel="apple-touch-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilos_clase14.css">
+<!--CSS de Sweet Alert-->
+    <link rel="stylesheet" href="./assets/sweet/sweetalert2.css">
+
+<!--Script entre etiquetas Head-->
+    <script>
+        function myFunction() {
+          document.getElementById("demo_2").innerHTML = "Ahora soy otro parrafo.";
+        }
+    </script>
+<!--Script de Sweet Alert-->
+    <script src="./assets/sweet/sweetalert2.min.js"></script>
+    <title>Proyecto Dev_Place</title>
+</head>
+<body>
+    <h1>
+        Clase 14: Javascript en HTML.
+    </h1>
+    <h2>
+        JavaScript en el Body:
+    </h2>
+        <p id="demo"></p>
+        <script>
+        document.getElementById("demo").innerHTML = "Mi primer codigo Javascript";
+        </script>
+        <hr>
+        <hr>
+    <h2>
+        JavaScript entre etiquetas Head:
+    </h2>
+        <p id="demo_2">Soy un Parrafo</p>
+        <button type="button" onclick="myFunction()">Probemos</button>
+    <hr>
+    <hr>
+    <h2>
+        Alerta con sweetalert2:
+    </h2>
+    <hr>
+    <h3>
+        Nombre del paciente:
+    </h3>
+    <form id="formulario">
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre:">
+        <input type="submit" value="Enviar" id="btnEnviar">
+    </form>
+<!--Script Propio-->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="img/logo.png" rel="icon">
+  	<link href="img/logo.png" rel="apple-touch-icon">
+	<title>Proyecto Dev_Place</title>
+</head>
+<h1 style="color: rgb(255, 238, 1); text-decoration: underline; font-weight: bold; border: 5px black solid;">Proyecto Dev_Place</h1>
+<body style="background-color: rgba(240, 54, 200, 0.534);">
+	<h2>Clase 2: Etiquetas</h2>
+	<!--Contenedor-->
+	<div style="background-color: blueviolet;">
+		<!--titulo(pueden ser de 1 a 6)-->
+		<h1>
+			Vamos a empezar de a poco
+		</h1>
+			<!--Parrafos-->
+			<p>
+				Este texto esta dentro de etiquetas "p" y aqui podemos escribir todo lo que queramos sin problemas.
+				<hr> <!--Salto tématico-->
+			</p>
+				<!--Lista Desordenada-->
+				<h2>
+					Vamos a armar una lista sencilla y simple
+				</h2>
+				<p>
+					Cuando en una lista y no necesitamos seguir un orden:
+				</p>
+				<ul>
+					<!--Elementos que queremos agregar a la lista-->
+					<li>
+						Ir al mercado.
+					</li>
+					<li>
+						Ordenar las herramientas del garage.
+					</li>
+					<li>
+						Leer un libro.
+					</li>
+					<li>
+						Comprar un monitor.
+					</li>
+				</ul>
+				<hr>
+				<h2>
+					Bien, ¿ahora que pasa si necesitamos una lista con un orden especifico?
+				</h2>
+				<hr>
+				<p>
+					Vamos a seguir los pasos para hacer una rica pizza.
+				</p>
+				<!--Lista Ordenada-->
+				<ol>
+					<li>
+						Se pone 1KG de Harina en forma de corona.
+					</li>
+					<li>
+						Se agrega 20gr de sal al rededor de la harina.
+					</li>
+					<li>
+						En una taza ponemos: media taza de agua tibia, una cucharada de azucar y 50gr de levadura(hay que esperar a que duplique su volumen asi se forma la esponja).
+					</li>
+					<li>
+						Colocar la preparación en el centro de la corona.
+					</li>
+					<li>
+						Agregar 20cc de aceite.
+					</li>
+					<li>
+						Amasar durante 20 minutos, cortar 4 bollos y dejar reposar hasta que se eleven.
+					</li>
+				</ol>
+				<h2>
+					¡¡¡A hornear y listo ya estan sus deliciosas pizzas!!!
+				</h2>
+	</div>
+	<hr>
+	<div style="background-color: chartreuse;">
+		<h1>
+			Ahora vamos con etiquetas más complejas, espero esten listos
+		</h1>
+		<p>
+			¿Como hacemos si queremos agregar una imagen?
+		</p>
+		<hr>
+		<!--Etiqueta para agregar imagenes-->
+		<img src="img/Gabinete-ASUS-ROG-Strix-Helios-1.png"width="200" height="200">
+		<p>
+			"La computadora que todos quisieramos tener jajaja".
+		</p>
+		<hr>
+		<p>
+			La etiqueta "img" continene un atributo llamado "src", que es una contracción de la palabra "Source" que significa fuente y sirve para definir la ruta de donde se obtiene la imagen.
+		</p>
+		<hr>
+		<p>
+			¿Y si queremos agregar un hipervinculo para ir a Google?
+		</p>
+		<a href="https://www.google.com/webhp?hl=es-419&ictx=2&sa=X&ved=0ahUKEwimidDG-t71AhUrILkGHSKMDeoQPQgI">Ir a Google</a>
+		<p>
+			La etiqueta "a" se utiliza para informar que queremos crear un hipervinculo a un sitio web ya existente. El mismo cuenta con un atributo llamado "href" en el cual se marca la URL del sitio al que queremos crear el hipervinculo.
+		    Ahora ¿que pasa si en vez de que sea un texto, queremos que sea un boton?
+		</p>
+		<!--Boton que nos redirecciona a Google-->
+		<button>
+			<a style="text-decoration: none;" href="https://www.google.com/webhp?hl=es-419&ictx=2&sa=X&ved=0ahUKEwimidDG-t71AhUrILkGHSKMDeoQPQgI">
+				Ir a Google
+			</a>
+		</button>
+	</div>
+	<hr>
+	<h1>
+		Bien pasemos a algo aún mas avanzado: formularios.
+	</h1>
+	<div style="background-color: aqua;">
+		<!--Inicio del formulario-->
+		<form>
+			<!--Definicion del campo del formulario-->
+			<label for="fnombre">Tu nombre completo: </label>
+			<!--Campo del formulario-->
+			<input type="text" id="fnombre" name="nombrecompleto" alt="fnombre">
+			<!--Salto de linea-->
+			<br><br>
+			<label for="fapellido">Tu apellido:</label>
+			<input type="text" id="fapellido" name="apellido" alt="fapellido" >
+			<br><br>
+			<label for=fnumero>Numero de celular:</label>
+    		<input type="number" id="fnumero" name="numerocelular" alt="fnumero">
+			<br><br>
+			<label for="femail">Correo Electronico:</label>
+			<input type="email" id="femail" name="correoelectronico" alt="femail">
+			<label for="fselection">¿Trabaja actualmente?</label>
+			<input type="checkbox" id="fselection" name="siono" alt="fselection">
+			<br>
+			<br>
+			<!--Boton de envio o guardar-->
+  			<input type="submit" value="Enviar la información">
+		</form>
+	</div>
+	<div style="background-color: crimson;">
+		<h2>
+			Para finalizar vamos a ver unas etiquetas que quedaron deprecadas u obsoletas al avanzar las versiones de HTML:
+		</h2>
+		<p>
+			Las siguientes etiquetas se consideran obsoletas, aunque estuvieron definidas en alguna recomendación de HTML: acronym, applet, basefont, big, center, dir, font, frame, frameset, isindex, keygen, listing, marquee, menuitem, multicol, nextid, noembed, noframes, plaintext, rb y muchas otras.
+			Si les pica la curiosidad y quieren saber para que servian o más sobre el tema aca les dejo el link: <a href="https://www.mclibre.org/consultar/htmlcss/html/html-obsoletos.html">Elementos Obsoletos en HTML</a>
+		</p>
+	</div>
+	<hr>
+	<hr>
+</body>
+</html>
